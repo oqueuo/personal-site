@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Global styles
+------------------------------------*/
+* {
+    /* Remove Chrome default margins */
+    margin: 0 !important;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+main {
+    position: relative;
+    width: 80vw;
+    display: block;
+    /* background: saddlebrown; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* NAVBAR */
+header {
+    color: white;
+    padding-top: 10px;
+    position: relative;
+    width: inherit;
+}
+header>a {
+    position: absolute;
+    font-size: 25px;
+    left: 260px;
+    top: 25px;
+}
+header ul {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+}
+#navbar-brand {
+
+}
+.navbar-brand {
+    text-decoration: none;
+    font-size: 40px !important;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+}
+
+.navbar-item {
+    display: inline;
+    font-size: 25px;
+    padding-right: 15px;
+}
+ul a, #email, .more-info-on-github {
+    text-decoration: none;
+    color: rgb(153, 140, 218);
+}
+
+ul a:hover, #email:hover, .more-info-on-github:hover {
+    opacity: 0.8;
+}
+ul a:active, #email:active, .more-info-on-github:active {
+    opacity: 0.7;
+}
+#horizontal-line {
+    width: 100vw;
+    left: 0;
+}
+
+
+/* ABOUT */
+#about {
+    color: white;
+    margin-top: 200px !important; 
+    /* background: royalblue; */
+}
+#about-text h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+}
+#about-text h2 {
+    margin-top: 30px !important;
+}
+#about p {
+    margin-top: 30px !important;
+    max-width: 30vw;
+    font-size: 20px;
+}
+
+
+/* Projects */
+
+#projects-header {
+    font-size: 40px;
+    color: white;
+    margin-top: 500px !important;
+    margin-bottom: 30px !important;
+}
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 300px !important;
+}
+.project-card-container {
+    box-sizing: border-box;
+    width: 50%;
+    height: 500px;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    position: relative;
+}
+.project-card-container:nth-child(2n) {
+    padding-right: 0;
+}
+.project-card-gray {
+    background-color: rgb(97, 96, 107);
+    height: 100%;
+    width: 100%;
+}
+.project-card-content {
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    background-size: auto;
+
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.project-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.project-card:hover .project-card-content {
+    opacity: 0.2;
+}
+
+.project-card:hover .project-overlay {
+opacity: 1;
+}
+
+
+/* Resume */
+.resume {
+    margin-top: 200px !important;
+    background-image: url(backgrounds/resume330.png);
+    height: 1000px;
+    width: 63%;
+}
+
+.three-vertical-dots {
+    color: white;
+}
+
+@media (max-width: 1300px) {
+    /* Recipe pulldown */
+    header ul {
+        list-style: none;
+        z-index: 5;
+    }
+    span.three-vertical-dots {
+        /* Put the three dots on top right corner of recipe card */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .three-vertical-dots li:active {
+        color: rgb(255, 239, 218);
+    }
+    #pulldown-btn {
+        cursor: pointer;
+        font-size: 20px;
+    } 
+    ul #nav-pulldown {
+        display: none;
+        background-color: rgb(253, 244, 222);
+        border: 1px solid #333;
+        border-radius: 4px;
+        width: 90px;
+        padding: 5px;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        text-align: end;
+    }
+    ul #nav-pulldown li {
+        color: #333;
+        display: block;
+        block-size: auto;
+    }
+    header>ul>li:hover #nav-pulldown {
+        display: block;
+    }
+    ul #nav-pulldown a {
+        color: rgb(76, 74, 83);
+        font-size: 15px;
+    }
+}

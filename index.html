@@ -1,0 +1,70 @@
+<!-- Accountability, Balance, Trustworthiness -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Seong Kim</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1 id="navbar-brand">
+          <a href="index.html" class="navbar-brand">KeunSeongK</a>
+        </h1>
+        <div id="pulldown-container">
+          <ul id="pulldown">
+            <li onClick="showHamburger()"><span id="pulldown-btn" class="glyphicon glyphicon-align-justify"></span>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <ul id="nav-pulldown">
+        <li id="close-hamburger" onClick="closeHamburger()">
+          <span id="close-hamburger-btn" class="glyphicon glyphicon-remove"></span>
+        </li>
+
+        <li class="navbar-item"><a class="nav-link" href="mailto:keunseongk@gmail.com">Email</a></li>
+        <li class="navbar-item"><a class="nav-link" href="Seong_Kim_Resume.pdf" target="_blank">Resume</a></li>
+        <li class="navbar-item"><a class="nav-link" href="https://github.com/oqueuo" target="_blank">GitHub</a></li>
+        <li class="navbar-item"><a class="nav-link" href="https://www.linkedin.com/in/seong-kim-a0a989160/" target="_blank">LinkedIn</a></li>
+      </ul>
+
+      <!-- About me -->
+      <section id="about">
+
+        <div id="about-text">
+          <h1>Seong Kim</h1>
+          <h2>Northwestern University<br>B.S. Computer Science (Junior/3rd Year)</h2>
+          <p>I recently switched my major to Computer Science because 
+            I love the idea of being able to build anything with nothing more than what's in my brain (plus free(?) software). 
+            <br><br>
+            Since switching, I have been working on personal projects (listed below) to gain practical skills in industry-used technologies,
+            as well as building my foundational knowledge from programming problems/competitions and classes.
+            <br><br>
+            Now, I am looking for internship/research 
+            opporunities to grow as a programmer.
+          </p>
+        </div>
+      </section>
+
+      <h1 id="projects-header">Projects</h1>
+
+      <!-- Projects: Filled in with JS template -->
+      <section id="projects">
+      </section>
+
+    </main>
+  </body>
+  <script>
+    render_projects(projects, "#projects");
+  </script>
+</html>

@@ -1,0 +1,85 @@
+<!-- Accountability, Balance, Trustworthiness -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seong Kim</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Glyphicon Examples</h2>
+      <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
+      <p>Envelope icon as a link:
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+      </p>
+      <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+      <p>Search icon on a button:
+        <button type="button" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+      </p>
+      <p>Search icon on a styled button:
+        <button type="button" class="btn btn-info">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+      </p>
+      <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>      
+      <p>Print icon on a styled link button:
+        <a href="#" class="btn btn-success btn-lg">
+          <span class="glyphicon glyphicon-print"></span> Print 
+        </a>
+      </p> 
+    </div>
+    <main>
+      <header>
+        <h1 id="navbar-brand"><a href="index.html" class="navbar-brand">KeunSeongK |</a></h1>
+        <a id="email" href = "mailto: abc@example.com">keunseongk@gmail.com</a>
+        <ul>
+          <li><span class="glyphicon glyphicon-optional-vertical three-vertical-dots"></span>
+            <ul>
+              <li class="navbar-item"><a class="nav-link" href=#about></a></li>
+              <li class="navbar-item" style="padding-right:100px;"><a class="nav-link" href="resume.html">Resume</a></li>
+              <li class="navbar-item"><a class="nav-link" href="https://github.com/oqueuo">GitHub</a></li>
+              <li class="navbar-item"><a class="nav-link" href="https://www.linkedin.com/in/seong-kim-a0a989160/">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </header> 
+      <section id="horizontal-line"></section>
+        <hr>
+      </section>
+      <!-- About me -->
+      <section id="about">
+
+        <div id="about-text">
+          <h1>Seong Kim</h1>
+          <h2>Northwestern University<br>B.S. Computer Science</h2>
+          <p>I am a sophomore at Northwestern University pursuing 
+            a B.S. in Computer Science. I recently switched from mechanical engineering 
+            because I really enjoy programming. For the last 2 months since switching, 
+            I have been working on projects such as an algorithmic trading bot and a 
+            bullet hell video game. I am currently looking for internship/research 
+            opporunities to grow as a programmer.
+          </p>
+        </div>
+      </section>
+
+      <h1 id="projects-header">Projects</h1>
+
+      <!-- Projects: Filled in with JS template -->
+      <section id="projects">
+      </section>
+
+    </main>    
+  </body>
+  <script>
+    render_projects(projects, "#projects");
+  </script>
+</html>
