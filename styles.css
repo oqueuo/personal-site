@@ -146,7 +146,7 @@ header {
 .project-card-container {
     box-sizing: border-box;
     width: 50%;
-    height: 500px;
+    height: 800px;
     padding-right: 2%;
     padding-bottom: 2%;
 }
@@ -161,11 +161,11 @@ header {
 }
 .project-card-content {
     position: absolute;
-    left: 10%;
-    top: 15%;
+    left: 6%;
+    top: 8%;
 
-    width: 80%;
-    height: 70%;
+    width: 88%;
+    height: 84%;
     position: absolute;
     background-size: cover;
     transition: .5s ease;
@@ -211,7 +211,9 @@ header {
     #about p {
         max-width: 60%;
     }
-
+    .project-card-container {
+        height: 600px;
+    }
 }
 @media (max-width: 1200px) {
     #about p {
@@ -229,5 +231,7 @@ header {
     #about p {
         max-width: 100%;
     }
-
+    .project-card-container {
+        height: 450px;
+    }
 }
