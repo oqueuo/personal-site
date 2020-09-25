@@ -242,4 +242,7 @@ header {
     .project-card-container {
         height: 450px;
     }
+    main {
+        width: 90vw;
+    }
 }
