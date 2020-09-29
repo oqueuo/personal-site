@@ -239,6 +239,9 @@ header {
     #about p {
         max-width: 100%;
     }
+    #nav-pulldown {
+        width: 40vw;
+    }
     .project-card-container {
         height: 450px;
     }
