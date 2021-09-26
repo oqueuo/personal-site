@@ -112,7 +112,7 @@ header {
 #about {
     color: white;
     margin-top: 100px !important; 
-    margin-bottom: 200px !important;
+    margin-bottom: 170px !important;
     /* background: royalblue; */
 }
 #about-text h1 {
@@ -133,16 +133,15 @@ header {
 #experiences-header {
     font-size: 40px;
     color: white;
-    margin-top: 0px !important;
-    margin-bottom: 30px !important;
     font-weight: 600;
+    margin-bottom: 30px !important;
 }
 #experiences {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     width: 100%;
-    margin-bottom: 200px !important;
+    margin-bottom: 100px !important;
 }
 .experience-card-container {
     box-sizing: border-box;
@@ -188,7 +187,6 @@ header {
 #projects-header {
     font-size: 40px;
     color: white;
-    margin-top: 0px !important;
     font-weight: 600;
     margin-bottom: 30px !important;
 }
