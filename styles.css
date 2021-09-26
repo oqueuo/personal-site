@@ -112,6 +112,7 @@ header {
 #about {
     color: white;
     margin-top: 100px !important; 
+    margin-bottom: 200px !important;
     /* background: royalblue; */
 }
 #about-text h1 {
@@ -128,12 +129,67 @@ header {
 }
 
 
+/* Experience */
+#experiences-header {
+    font-size: 40px;
+    color: white;
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+    font-weight: 600;
+}
+#experiences {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 200px !important;
+}
+.experience-card-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "logo info";
+    grid-template-columns: 200px calc(100% - 400px);
+    margin-bottom: 50px !important;
+}
+    .experience-logo {
+       grid-area: logo;
+       background-color: white;
+       background-position: center;
+       background-size: cover;
+       height: 200px;
+    }
+    .experience-info {
+        grid-area: info;
+        padding-left: 30px;
+        color: white;
+    }
+        .experience-company {
+            font-size: 27px;
+            font-weight: 600;
+        }
+        .experience-title {
+            font-size: 19px;
+            padding-top: 6px;
+        }
+        .experience-date {
+            font-size: 14px;
+            padding-top: 3px;
+        }
+        .experience-summary {
+            font-size: 17px;
+            padding-top: 20px;
+        }
+
+
 /* Projects */
 
 #projects-header {
     font-size: 40px;
     color: white;
-    margin-top: 300px !important;
+    margin-top: 0px !important;
+    font-weight: 600;
     margin-bottom: 30px !important;
 }
 #projects {

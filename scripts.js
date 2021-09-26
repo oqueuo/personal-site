@@ -1,9 +1,17 @@
 var projects = [
     {
+        title: "Common Crawl Search Engine",
+        description: "A search engine that queries Common Crawl's web-scraping data. I learned how to write a backend API in Java, upload data to AWS ElasticSearch, and deploy on AWS Elastic Beanstalk.",
+        cover: "backgrounds/CommonCrawl.png",
+        demo: "https://www.youtube.com/watch?v=CHQksGVgDz4",
+        link: "n/a",
+        github: "n/a"
+    },
+    {
         title: "Cookstagram",
         description: "A recipe-sharing social network application created with ReactJS/Redux frontend and Django Rest Framework backend",
         cover: "backgrounds/cookstagram.jpg",
-        link: "https://cookstagram.recipes",
+        link: "https://cookstagram.live",
         github: "https://github.com/oqueuo/Cookstagram"
     },
     {
@@ -19,7 +27,7 @@ var projects = [
         cover: "backgrounds/boollet-hell.png",
         link: "n/a",
         github: "n/a"
-    }
+    },
 ]
 function try_out_the_website(project) {
     if (project.link != "n/a") {
@@ -41,6 +49,15 @@ function more_info_on_my_github(project) {
     }
 }
 
+function show_video_demo(project) {
+    if ('demo' in project) {
+        return `
+        Video Demo: <a href="${project.demo}" style="color: #ffd4be" target="_blank">YouTube Link</a>`
+    } else {
+        return ``
+    }
+}
+
 function render_projects(projects, projects_id) {
     let project_case = document.querySelector(projects_id);
     if (project_case) {
@@ -52,6 +69,7 @@ function render_projects(projects, projects_id) {
                     ${project.description}<br><br>
                     ${try_out_the_website(project)} <br>
                     ${more_info_on_my_github(project)}
+                    ${show_video_demo(project)}
                 </div>`;
                 
                 let project_card_container = document.createElement("div");
@@ -74,6 +92,46 @@ function closeHamburger() {
     document.getElementById("nav-pulldown").style.cssText = "opacity: 0; visibility: hidden;";
 }
 
-const show_project_info = (el) => {
 
+
+
+
+var experiences = [
+    {
+        company: "Vectorworks",
+        title: "Software Engineer Intern",
+        date: "June 2021 - August 2021",
+        summary: "● Overhauled the content translation system in Django: decreased upload times by 85%, automated task assignments/notifications, and implemented pre-production previews<br>\
+                  ● Created memory analysis tools using Python libraries (Pympler, objgraph) to diagnose and fix memory leaks on production servers.<br>\
+                  ● Developed the main accounts page of the single sign-on system using React<br>\
+                  ● Revamped the software release preparation system with MySQL and automated Slack messages.",
+        logo: "backgrounds/vectorworks_small.png"
+    },
+]
+
+function render_experiences(experiences, experience_id) {
+    let experience_case = document.querySelector(experience_id);
+    if (experience_case) {
+        if (experiences instanceof Array) {
+            for (let experience of experiences) {
+                let template = `
+                <div class="experience-logo" style="background-image: url(${experience.logo});"></div>
+                <div class="experience-info">
+                    <h1 class="experience-company">
+                        ${experience.company}</h1>
+                    <h2 class="experience-title">
+                        ${experience.title}</h2>
+                    <h3 class="experience-date">
+                        ${experience.date}</h3>
+                    <p class="experience-summary">
+                        ${experience.summary}</p>
+                </div>`;
+                
+                let experience_card_container = document.createElement("div");
+                experience_card_container.className = "experience-card-container";
+                experience_card_container.innerHTML = `${template}`
+                experience_case.append(experience_card_container);
+            }
+        }
+    }
 }
