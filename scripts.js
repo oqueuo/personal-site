@@ -18,7 +18,7 @@ var projects = [
         title: "Cook Simple",
         description: "A minimalist recipe storage app created with Django and Django Templates",
         cover: "backgrounds/cook-simple.png",
-        link: "https://cooksimple.life",
+        link: "http://cjzj.pythonanywhere.com/",
         github: "https://github.com/oqueuo/cook_simple"
     },
     {
