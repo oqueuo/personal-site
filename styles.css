@@ -269,6 +269,11 @@ header {
         height: 600px;
     }
 }
+@media (max-width: 1400px) {
+    .experience-card-container {
+        grid-template-columns: 200px calc(100% - 200px);
+    }
+}
 @media (max-width: 1200px) {
     #about p {
         max-width: 80%;
@@ -302,4 +307,26 @@ header {
     main {
         width: 90vw;
     }
+
+    .experience-card-container {
+        box-sizing: border-box;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "logo"
+            "info";
+        grid-template-rows: 200px;
+        grid-template-columns: 100%;
+        margin-bottom: 50px !important;
+    }
+        .experience-logo {
+            width: 200px;
+        }
+        .experience-info {
+            grid-area: info;
+            padding-left: 0px;
+            padding-top: 15px;
+            color: white;
+            width: 100%;
+        }
 }
